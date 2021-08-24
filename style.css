@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    background: url(./totoro_march_by_datdatori_d8u4rmr.png);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+}
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    padding: 15px;
+    transition: all 0.7s;
+    z-index: 1000;
+}
+    
+.logo{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-left: 40px;
+}
+#inner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main-menu{
+    display: flex;
+}
+#main-menu a{
+    text-transform: uppercase;
+    margin-right: 50px;
+    display: block;
+    color: #000;
+    font-weight: bold;
+    transition: all .7s;
+}
+#main-menu a:hover{
+    color: pink;
+    border-bottom: 2px solid #000;
+}
+header.sticky{
+    background-color: #fff;
+    /* opacity: 1; */
+    color: #000;
+    padding: 20px 0;
+    z-index: 1000;
+}
+header.sticky #main-menu li a{
+    color: #000;
+}
+.content{
+    background-color: #fff ;
+    border-radius: 30px;
+    
+}
+.pp{
+    padding: 30px 10px;
+}
+.container{
+    backdrop-filter: blur(8px);
+}
+h2{
+    color: #000;
+    text-align: center;
+}
+.content form{
+    text-align: center;
+}
+form input[type="search"]{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: navajowhite;
+}
+form input[type="submit"]{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    transition: all 1s;
+    cursor: pointer;
+}
+form input[type="submit"]:hover{
+    background-color: orchid;
+}
+.container{
+    display: grid;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    transition: all .8s;
+     padding: 10px;
+}
+.item{
+    padding: 20px 10px;
+    text-align: center;
+    overflow: hidden;
+}
+.item img{
+    width: 100%;
+    max-height: 300px; 
+    border-radius: 10px;
+    transition: all .6s;
+    overflow: hidden;
+}
+.item:hover img{
+    filter: blur(3px) grayscale(30%);     
+}
+@media only screen and (max-width: 1100px) {
+    .container{
+        display: grid;
+    grid-template-columns: 30% 30% 30%;
+  
+     padding: 10px;
+    }
+  }
+@media only screen and (max-width: 800px) {
+    .container{
+        display: grid;
+        grid-template-columns: 48% 48%;
+    
+        padding: 10px;
+    }
+  }
+/* +++++++++detail============== */
+.detail{
+    background-color: paleturquoise;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+h1::after{
+    content: "\A";
+    width: 30px;
+    height: 2px;
+    display: block;
+    margin-top: 10px;
+    background-color: #000;
+    margin: 0 auto;
+}
+.info{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    transition: all .8s;
+    padding: 10px;
+}
+.grid{
+    padding: 20px 30px;
+}
+.grid p{
+    padding: 15px 10px;
+}
+.grid img{
+    width: 100%;
+    max-height: 400px;
+}
